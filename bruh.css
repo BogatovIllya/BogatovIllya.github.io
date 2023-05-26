@@ -1,0 +1,287 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav::after{
+    position: relative;
+    z-index: 0;
+    background: #605959;
+    content: "";
+    height: 80px;
+    left: 0;
+
+    position: absolute;
+    top: 0;
+    transition: all .2s ease;
+    width: 100%;
+} 
+
+.nav .wrapper li{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-list-link{
+    color: aliceblue;
+}
+
+.nav-list-link-1{
+    color: aliceblue;
+}
+
+.nav-list li:hover{
+    color: #ead4bb;
+    transition: all .25s ease;
+}
+
+.nav-list-link::after{
+    background: #baa48a;
+    bottom: -8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all .25s ease;
+    width: 100%;
+}
+
+.nav-list-link:hover:after{
+    transform: scaleX(0.75);
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 130px;
+}
+
+.wrapper a{
+    position: relative;
+    z-index: 1;
+}
+
+.nav a{
+    font-size: 30px;
+}
+
+.nav-list ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin-left: -3px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.nav-list ul li {
+    float: none;
+  }
+
+.nav-list li:hover > ul {
+    display: block;
+    background: #222;
+    border-top: 0;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  }
+
+.nav-list li:hover > ul li:hover {
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+  }
+
+.nav-list li li a:hover {
+    color: #ead4bb;
+    transition: all .25s ease;
+}
+
+.nav-list ul li:last-child a,
+.nav-list ul li:last-child a:hover {
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.main-article{
+    background-color: #fff;
+    height: 80%;
+    width: 100%;
+}
+
+.main-article1{
+	position: relative;
+    z-index: 1;
+    padding: 25px 120px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+	
+}
+
+.main-article-subhead{
+	font-size: 92px;
+    font-weight: 900;
+}
+
+.main-article-img{
+	justify-content: center;
+    object-fit: cover;
+    height: 490px;
+    width: 490px;
+	
+}
+
+.main-text{
+	font-size: 150%;
+	padding: 20px 10px 20px 65px;
+	height: 130px;
+	width: 90vw;
+}
+
+.footer {
+  background-color: #605959;
+  padding: 20px 0px 20px 13px;
+  text-align: center;
+
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-row img {
+  width: 25px; /* Измените размеры картинок по своему усмотрению */
+  height: 20px;
+  margin-right: 5px; /* Добавьте отступ между картинками */
+  margin-left: 30px; /* Добавьте отступ между картинками */
+}
+
+.footer-row p {
+  margin: 0;
+  color: aliceblue;
+}
+
+.logo-container{
+    height: 70px;
+    display: inline-block;
+}
+
+.logo-container::after{
+    content: "";
+}
+
+.logo-container:hover{
+    transform: scale(1.1);
+    opacity: .9;
+    transition: all 0.25s ease;
+}
+
+
+
+.center-block {
+	width: 18vw;
+	margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.container1{
+	padding: 2%;
+	width: 96%;
+	
+	
+}
+
+.container1-text{
+	
+	
+}
+
+.container1 img{
+	justify-content: center;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  flex: 0 0 auto;
+  margin-right: 20px; /* Отступ между картинкой и текстом */
+}
+
+.text {
+  flex: 1 1 auto;
+}
+
+.text h1 {
+  text-transform: uppercase;
+}
+
+.text p {
+  margin-bottom: 10px; /* Отступ между строками текста */
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 2%;
+}
+
+.gallery img{
+	object-fit: cover;
+    height: 300px;
+    width: 300px;
+	padding: 1px;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img{
+	gap: 10px
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
